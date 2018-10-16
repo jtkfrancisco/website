@@ -1,0 +1,339 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+    display: none;
+}
+
+@font-face {
+    font-family: 'Futura Std Book';
+    src: url('../fonts/FuturaStd-Bold.eot');
+    src: url('../fonts/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaStd-Bold.woff2') format('woff2'),
+        url('../fonts/FuturaStd-Bold.woff') format('woff'),
+        url('../fonts/FuturaStd-Bold.ttf') format('truetype'),
+        url('../fonts/FuturaStd-Bold.svg#FuturaStd-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Std';
+    src: url('../fonts/FuturaStd-BookOblique.eot');
+    src: url('../fonts/FuturaStd-BookOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaStd-BookOblique.woff2') format('woff2'),
+        url('../fonts/FuturaStd-BookOblique.woff') format('woff'),
+        url('../fonts/FuturaStd-BookOblique.ttf') format('truetype'),
+        url('../fonts/FuturaStd-BookOblique.svg#FuturaStd-BookOblique') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura Std';
+    src: url('../fonts/FuturaStd-Light.eot');
+    src: url('../fonts/FuturaStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaStd-Light.woff2') format('woff2'),
+        url('../fonts/FuturaStd-Light.woff') format('woff'),
+        url('../fonts/FuturaStd-Light.ttf') format('truetype'),
+        url('../fonts/FuturaStd-Light.svg#FuturaStd-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Std';
+    src: url('../fonts/FuturaStd-CondensedOblique.eot');
+    src: url('../fonts/FuturaStd-CondensedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaStd-CondensedOblique.woff2') format('woff2'),
+        url('../fonts/FuturaStd-CondensedOblique.woff') format('woff'),
+        url('../fonts/FuturaStd-CondensedOblique.ttf') format('truetype'),
+        url('../fonts/FuturaStd-CondensedOblique.svg#FuturaStd-CondensedOblique') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #717171;
+    margin-top: -0.45rem;
+    margin-bottom: 1.5rem;
+    padding: 0; 
+}
+
+.justify-aligned {
+    text-align: justify !important;
+}
+
+.mainBodyWrapper {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 4rem;
+    max-width: 1024px;
+}
+
+.headerLeftLogo {}
+
+.headerLeftSide {
+    float: left;
+    margin-left: -69px;
+}
+
+.headerLeftSide img {
+    display: inline-block;
+}
+
+.logoImg {
+    padding-right: 17px;
+}
+
+.headerRightSide {
+    float: right;
+    font-size: 0;
+}
+
+#mobileMenuBtn {
+    cursor: pointer;
+    float: right;
+    margin-right: .6rem;
+    display: none;
+}
+
+#mobileMenuOverlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    z-index: 1000;
+    display: none;
+}
+
+#mobileMenuCloseBtn {
+    cursor: pointer;
+    float: right;
+    margin-right: .6rem;
+}
+
+#mobileMenuContent {
+    list-style: none;
+    margin-top: 4rem;
+    text-align: center;
+    padding-left: 0;
+}
+
+#mobileMenuContent li {
+    font-family: 'Futura Std Book';
+    color: #ffffff;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+#mobileMenuContent li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.topContentDivider {
+    padding-top: 62px;
+    float: none;
+    width: 100%;
+    height: 80px;
+}
+
+.pageContentWrapper {
+    width: auto;
+}
+
+.pageContent {
+    width: auto;
+    margin-left: 17px;
+}
+
+.sectionTitle {
+    font-family: 'Futura Std Book';
+    color: #ffffff;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+#mainWorkMenu {
+    margin-bottom: 14rem;
+}
+
+#featuredWorkMenu {
+    max-width: 1007px;
+}
+
+/* clearfix */
+#featuredWorkMenu:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-item {
+    width: 321px;
+    height: 321px;
+    margin-bottom: 21px;
+    float: left;
+}
+
+.testimonial-bg, .services-bg {
+    background-repeat: no-repeat;
+    background-image: url(../images/testimonials/testimBg.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.work-text {
+    font-family: 'Futura Std';
+    font-weight: normal;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.about-text {
+    font-family: 'Futura Std';
+    font-weight: normal;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.testimonials-text {
+    font-family: 'Futura Std';
+    font-weight: normal;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.services-text {
+    font-family: 'Futura Std';
+    font-weight: normal;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.testimonialsAuthor {
+    font-family: 'Futura Std';
+    font-weight: 300;
+    font-style: normal;
+}
+
+.about-height {
+    height: 475px;
+}
+
+.grid-item-img {
+    max-width:100%;
+    max-height:100%;
+    border:1px solid #FFFFFF;
+}
+
+.grid-item-img-no-border {
+    max-width:100%;
+    max-height:100%;
+}
+
+.grid-item-block {
+    width:100%;
+    height:100%;
+    border:1px solid #FFFFFF;
+}
+
+.grid-item--width2 {
+    width: 663px;
+}
+
+.grid-item--width3 {
+    width: 1007px;
+}
+
+.grid-item--height2 {
+    height: 663px;
+}
+
+.grid-item--height3 {
+    height: 1007px;
+}
+
+.inlineBlockCls {
+    display: inline-block;
+}
+
+.mainNavMenuItemSpacer {
+    display: inline-block;
+    width: 21px;
+}
+
+.mainNavMenuItem {
+    padding-top: 34px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.mainNavMenuItem .normal {
+    cursor: pointer;
+    display: block;
+    vertical-align: top;
+}
+
+.mainNavMenuItem .over {
+    cursor: pointer;
+    display: none;
+    vertical-align: top;
+}
+
+.footerHr {
+    border-top: 1px solid #ffffff;
+    margin-top: 2rem;
+}
+
+#footer {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1rem;
+    max-width: 1024px;
+}
+
+#footerTextMobile {
+    display: none;
+}
+    
+#footerLeftContent {
+    float: left;
+    margin-left: 17px;
+    font-family: 'Futura Std';
+    font-weight: 500;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+#footerRightContent {
+    float: right;
+}
+
+.footerSmPaddingRight {
+    padding-right: .5rem;
+}

@@ -1,0 +1,113 @@
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+
+@media all and (max-width: 1162px) {
+    .headerLeftSide {
+        margin-left: 0;
+    }
+
+    .pageContentWrapper, #footer {
+    	margin-left: 69px;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (max-width: 768px) {
+	.grid-item--width2 { width: 321px !important; height: 160.5px !important; }
+	.grid-item--width3 { width: 321px !important; height: 107px !important; }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) {
+  .mainBodyWrapper {
+      margin-top: 1rem;
+  }
+
+  .headerLeftSide {
+      margin-left: 1rem;
+  }
+
+  .headerLeftSide img {
+      display: block;
+  }
+
+  #mobileMenuBtn {
+      display: block;
+  }
+
+  .headerRightSide {
+      display: none;
+  }
+
+  .pageContent, .pageContentWrapper {
+      margin-left: 1rem;
+  }
+
+	#footer, #footerLeftContent {
+	    margin-left: 0;
+	}
+
+  #footerTextMobile {
+      display: block;
+  }
+
+  #footerTextDesktop {
+      display: none;
+  }
+
+  #footerLeftContent, #footerRightContent {
+      float: none;
+      text-align: center;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .pageContent, .pageContentWrapper {
+        margin-left: 0;
+    }
+}
+
+
+/* Portrait */
+@media screen and (orientation:portrait) { /* Portrait styles here */ }
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+} 
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+}
